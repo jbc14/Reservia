@@ -1,87 +1,99 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" />
-    <title>Reservia</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/Reservia@3x.png">
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Reservia</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="20x20"
+            href="images/logo/Reservia@3x.png"
+        />
+        <script
+            src="https://kit.fontawesome.com/feb9dddf2b.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-  <body>
+    <body>
+        <header>
+            <img
+                src="images/logo/Reservia@3x.png"
+                alt="Logo Reservia"
+                width="150"
+                height="75"
+            />
 
-      <header>
-          <div id="logo">
-            <img src="images/logo/Reservia@3x.png" alt="Logo Reservia" width="200" height="100"> 
-          </div>
+            <nav>
+                <ul>
+                    <li><a href="#locations">Hébergements</a></li>
+                    <li><a href="#activities">Activités</a></li>
+                    <li><a id="inscription" href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </header>
 
-          <nav>
-              <ul>
-                  <li><a href="#">Hébergements</a></li>
-                  <li><a href="#">Activités</a></li>
-                  <li><a href="#">S'inscrire</a></li>
-              </ul>
-          </nav>
+        <div id="description">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h2>En plein centre-ville ou en pleine nature</h2>
+        </div>
 
-          <div id="description">
-              <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-              <h2>En plein centre-ville ou en pleine nature</h2>
-          </div>
-      </header>
+        <section class="search">
+            <input
+                type="search"
+                name="searchbar"
+                placeholder="Trouvez votre hébergement de rêve"
+                autofocus
+            />
 
-      <section id="search">
-          <div id="searchbar">
-            <input type="search" name="searchbar" id="searchbar"
-            placeholder="Trouvez votre hébergement de rêve" autofocus>
-          </div>
+            <div id="filters">
+                <h2>Filtres</h2>
+                <i class="fas fa-dog"></i>
+            </div>
 
-          <div id="filters">
-            Filtres 
-          </div>
+            <div id="info">
+                <p>Plus de 500 logements disponibles dans cette ville</p>
+            </div>
+        </section>
 
-          <div id="info">
+        <section id="locations">
+            <h2>Hébergements</h2>
+        </section>
 
-          </div>
-      </section>
-  
-      <section id="locations">
+        <aside id="popular">
+            <h2>Les plus populaires</h2>
+        </aside>
 
-      </section>
-  
-      <section id="popular">
+        <section id="activities">
+            <h2>Activités</h2>
+        </section>
 
-      </section>
+        <footer>
+            <div id="about">
+                <h3>A propos</h3>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
 
-      <section id="activities">
+            <div id="ourlocations">
+                <h3>Hébergements</h3>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
 
-      </section>
-
-      <footer>
-          <div id="about">
-              <h1>A propos</h1>
-              <ul>
-                  <li><a href="#">Fonctionnement du site</a></li>
-                  <li><a href="#">Conditions générales de vente</a></li>
-                  <li><a href="#">Données et confidentialité</a></li>
-              </ul>
-          </div>
-
-          <div id="ourlocations">
-              <h1>Hébergements</h1> 
-              <ul>
-                  <li><a href="#">Charte qualité</a></li>
-                  <li><a href="#">Soumettre votre hôtel</a></li>
-              </ul>
-          </div>
-
-          <div id="help">
-              <h1>Assitance</h1>
-              <ul>
-                  <li><a href="#">Centre d'aide</a></li>
-                  <li><a href="#">Nous contacter</a></li>
-              </ul>
-          </div>
-      </footer>
-
-  </body>
-
-  </html>
+            <div id="help">
+                <h3>Assitance</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
