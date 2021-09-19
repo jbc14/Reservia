@@ -8,6 +8,7 @@
 
 body {
     font-family: "Raleway-VariableFont_wght";
+    background-color: white;
 }
 
 ul {
@@ -19,11 +20,11 @@ ul {
 header {
     display: flex;
     justify-content: space-between;
-    font-size: large;
+    font-size: medium;
 }
 
 header img {
-    margin-top: auto;
+    margin-top: 20px;
 }
 
 header ul {
@@ -57,13 +58,69 @@ header a:hover {
 /*DESCRIPTION*/
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
+    margin-bottom: 3px;
 }
 
-h2 {
+#description h2 {
     font-size: 1em;
     font-weight: normal;
+    margin-top: 3px;
+}
+
+/*SEARCH*/
+
+/*FILTERS*/
+#filters {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+#filters h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-inline-end: 20px;
+}
+
+#filters div {
+    border: 2px #f2f2f2 solid;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-inline-end: 15px;
+    padding-inline-end: 15px;
+}
+
+#filters div:hover {
+    background-color: #deebff;
+    border-color: #0065fc;
+}
+
+.fas {
+    border: 0px;
+    background-color: #deebff;
+    border-radius: 100px;
+    padding: 10px;
+    color: #0065fc;
+    margin-inline-end: 15px;
+}
+
+#child {
+    padding-right: 13px;
+    padding-left: 13px;
+}
+
+/*INFO*/
+#info i {
+    padding: 3px 7px 3px 7px;
+    background-color: white;
+    border: 2px solid #f2f2f2;
+    font-size: 0.7em;
+    margin-inline-end: 5px;
+}
+
+#info p {
+    font-size: 0.8em;
 }
 
 /*FOOTER*/
@@ -72,6 +129,7 @@ footer {
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 
 footer a {
@@ -82,6 +140,12 @@ footer a:visited {
     color: black;
 }
 
-footer li {
-    justify-content: space-between;
+footer ul li {
+    margin-left: -40px;
+    margin-bottom: 10px;
+}
+
+footer div {
+    padding-right: 260px;
+    padding-left: 0px;
 }
