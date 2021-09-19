@@ -1,66 +1,87 @@
 /*GENERAL*/
 
 @font-face {
-    font-family: 'Raleway-ExtraLight';
-    src: url('fonts/Raleway-ExtraLight.ttf') format('truetype');
-    font-weight: normal;
+    font-family: "Raleway-VariableFont_wght";
+    src: url("fonts/Raleway-VariableFont_wght.ttf") format("truetype");
     font-style: normal;
 }
 
-body
-{
-    font-family: 'Raleway-ExtraLight';
-    font-size: large;
+body {
+    font-family: "Raleway-VariableFont_wght";
 }
 
-ul
-{
+ul {
     list-style-type: none;
 }
 
-
 /*HEADER*/
 
-header
-{
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+header img {
+    margin-top: auto;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    margin: 20px;
+    font-weight: normal;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header #inscription {
+    color: #0065fc;
+    font-weight: bold;
+}
+
+header a:visited {
+    color: black;
+}
+
+header a:hover {
+    border-top: 3px solid #0065fc;
+    padding-top: 42px;
+    color: #0065fc;
+}
+
+/*DESCRIPTION*/
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
 }
 
-header img
-{
-    margin-top: auto;
-}
-
-header ul
-{
-    display: flex;
-}
-
-header li
-{
-    margin: 20px;
-    font-weight: bolder;
-}
-
-header a
-{
+footer a {
     text-decoration: none;
 }
 
-header #inscription
-{
-    color: #0065FC;
-}
-
-header a:visited
-{
+footer a:visited {
     color: black;
 }
 
-header a:hover
-{
-    border-top: 3px solid #0065FC;
-    padding-top: 42px;
-    color: #0065FC;
+footer li {
+    justify-content: space-between;
 }
