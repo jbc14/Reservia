@@ -71,7 +71,19 @@ h1 {
 
 /*SEARCH*/
 
+form {
+    border: 1px black solid;
+    margin-right: 77%;
+    padding: Opx;
+    border-radius: 14px;
+}
+
+form .submit {
+    background-color: #0065fc;
+    color: white;
+}
 /*FILTERS*/
+
 #filters {
     display: flex;
     align-items: center;
@@ -96,7 +108,7 @@ h1 {
     border-color: #0065fc;
 }
 
-.fas {
+#filters .fas {
     border: 0px;
     background-color: #deebff;
     border-radius: 100px;
@@ -105,7 +117,7 @@ h1 {
     margin-inline-end: 15px;
 }
 
-#child {
+.fa-child {
     padding-right: 13px;
     padding-left: 13px;
 }
@@ -117,10 +129,83 @@ h1 {
     border: 2px solid #f2f2f2;
     font-size: 0.7em;
     margin-inline-end: 5px;
+    border-radius: 100px;
+    color: #0065fc;
 }
 
 #info p {
     font-size: 0.8em;
+}
+
+/*HEBERGEMENTS*/
+
+#locations {
+    background-color: #f2f2f2;
+    border-radius: 14px;
+    flex: 2;
+    margin-right: 30px;
+}
+
+#locations h2 {
+    margin-left: 30px;
+}
+
+#locations p {
+    margin-left: 30px;
+}
+
+#loc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.loc {
+    background-color: white;
+    border-radius: 14px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.loc img {
+    border-radius: 14px 14px 0px 0px;
+}
+
+.loc h3 {
+    font-size: 0.9em;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.loc p {
+    font-size: 0.8em;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.fa-star {
+    font-size: small;
+    color: #0065fc;
+}
+
+.empty {
+    color: #f2f2f2;
+}
+
+/*POPULAIRES*/
+
+aside {
+    background-color: #f2f2f2;
+    display: flex;
+    border-radius: 14px;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*BLOC LOC + POP*/
+
+#loc_aside {
+    display: flex;
 }
 
 /*FOOTER*/
