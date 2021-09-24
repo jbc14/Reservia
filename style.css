@@ -129,6 +129,7 @@ form .submit {
     padding-inline-end: 15px;
     height: 45px;
     text-align: center;
+    vertical-align: middle;
 }
 
 #filters div:hover {
@@ -241,7 +242,7 @@ aside h2 {
 }
 
 .fa-chart-line {
-    margin-inline-start: 115px;
+    margin-inline-start: 103px;
 }
 
 .pop {
@@ -290,13 +291,79 @@ aside h2 {
     display: flex;
 }
 
+/*ACTIVITES*/
+
+#activities {
+    display: flex;
+}
+
+.act {
+    background-color: white;
+    border-radius: 14px;
+    margin: 0px 25px 25px 0px;
+    box-shadow: #f2f2f2 0px 10px 15px;
+}
+
+#activities img {
+    border-radius: 14px 14px 0px 0px;
+    object-fit: cover;
+}
+
+.colonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.colonne div {
+    background-color: white;
+    border-radius: 14px;
+    margin: 0px 25px 25px 0px;
+    box-shadow: #f2f2f2 0px 10px 15px;
+}
+
+#vieuxport {
+    height: 390px;
+    width: 300px;
+}
+
+#fortdepomegues {
+    height: 180px;
+    width: 300px;
+}
+
+#ilesdufrioul {
+    height: 110px;
+    width: 300px;
+}
+
+#parcnationaldescalanques {
+    height: 390px;
+    width: 300px;
+}
+
+#nddlg {
+    height: 140px;
+    width: 300px;
+}
+
+#parclongchamp {
+    height: 150px;
+    width: 300px;
+}
+
+#activities h3 {
+    margin-left: 15px;
+    font-size: 0.9em;
+}
+
 /*FOOTER*/
 
 footer {
     background-color: #f2f2f2;
     display: flex;
     justify-content: left;
-    margin: 0;
+    margin: none;
 }
 
 footer a {
