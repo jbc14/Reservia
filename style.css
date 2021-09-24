@@ -9,6 +9,8 @@
 body {
     font-family: "Raleway-VariableFont_wght";
     background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 ul {
@@ -50,7 +52,7 @@ header a:visited {
 }
 
 header a:hover {
-    border-top: 3px solid #0065fc;
+    border-top: 2px solid #0065fc;
     padding-top: 42px;
     color: #0065fc;
 }
@@ -73,22 +75,23 @@ h1 {
 
 form {
     border: 1px #f2f2f2 solid;
-    padding: Opx;
     border-radius: 14px;
     display: flex;
-    height: 40px;
-    width: 350px;
+    height: 50px;
+    width: 420px;
 }
 
 form i {
     background-color: #f2f2f2;
-    justify-content: center;
-    padding: 12px 15px 15px 15px;
+    justify-items: center;
     border-radius: 14px 0 0 14px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
 }
 
 form .search {
-    width: 100%;
+    width: 235px;
     font-family: "Raleway-VariableFont_wght";
     font-size: medium;
     font-weight: bold;
@@ -99,11 +102,11 @@ form .submit {
     background-color: #0065fc;
     color: white;
     font-family: "Raleway-VariableFont_wght";
-    margin-left: auto;
     border-radius: 0px 14px 14px 0;
     font-weight: bold;
     font-size: medium;
     border: none;
+    width: 135px;
 }
 /*FILTERS*/
 
@@ -124,6 +127,8 @@ form .submit {
     border-radius: 25px;
     margin-inline-end: 15px;
     padding-inline-end: 15px;
+    height: 45px;
+    text-align: center;
 }
 
 #filters div:hover {
@@ -135,14 +140,13 @@ form .submit {
     border: 0px;
     background-color: #deebff;
     border-radius: 100px;
-    padding: 10px;
     color: #0065fc;
-    margin-inline-end: 15px;
-}
-
-.fa-child {
-    padding-right: 13px;
-    padding-left: 13px;
+    margin-inline-end: 13px;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /*INFO*/
@@ -166,15 +170,18 @@ form .submit {
     background-color: #f2f2f2;
     border-radius: 14px;
     flex: 2;
-    margin-right: 30px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-left: 25px;
 }
 
 #locations h2 {
-    margin-left: 30px;
+    margin-left: 5px;
+    margin-bottom: 20px;
 }
 
 #locations #afficherplus {
-    margin-left: 30px;
+    margin-left: 5px;
 }
 
 #loc {
@@ -187,11 +194,14 @@ form .submit {
     background-color: white;
     border-radius: 14px;
     padding: 5px;
-    margin: 20px;
+    margin: 0px 25px 25px 0px;
 }
 
 .loc img {
     border-radius: 14px 14px 0px 0px;
+    height: 115px;
+    width: 235px;
+    object-fit: cover;
 }
 
 .loc h3 {
@@ -223,17 +233,22 @@ aside {
     border-radius: 14px;
     flex-direction: column;
     flex: 1;
+    padding-top: 10px;
 }
 
 aside h2 {
     margin-left: 30px;
 }
 
+.fa-chart-line {
+    margin-inline-start: 115px;
+}
+
 .pop {
     background-color: white;
     border-radius: 14px;
     padding: 5px;
-    margin: 20px;
+    margin: 0px 25px 25px 25px;
     display: flex;
 }
 
@@ -246,6 +261,9 @@ aside h2 {
 
 .pop img {
     border-radius: 14px 0px 0px 14px;
+    height: 134px;
+    width: 127px;
+    object-fit: cover;
 }
 
 .pop h3 {
@@ -277,7 +295,7 @@ aside h2 {
 footer {
     background-color: #f2f2f2;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     margin: 0;
 }
 
@@ -295,6 +313,6 @@ footer ul li {
 }
 
 footer div {
-    padding-right: 260px;
-    padding-left: 0px;
+    margin-right: 200px;
+    margin-left: 30px;
 }
