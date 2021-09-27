@@ -98,7 +98,7 @@ form i {
     width: 50px;
     height: 50px;
     text-align: center;
-    line-height: 40px !important;
+    line-height: 45px !important;
 }
 
 form .search {
@@ -394,4 +394,66 @@ footer ul li {
 footer div {
     margin-right: 200px;
     margin-left: 30px;
+}
+
+
+
+
+/*VERSION MOBILE*/
+
+@media all and (max-device-width: 480px) {
+
+#bloc_page {
+margin-right: 0;
+margin-left: 0;
+padding: 0;
+}
+
+ul {
+    flex-wrap: wrap-reverse;
+}
+
+#filters {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#loc_aside {
+    flex-wrap: wrap-reverse;
+}
+
+aside {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0px;
+    width: auto ;
+}
+
+#locations {
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: white;
+}
+
+#loc img {
+    width: 335px;
+    height: 135px;
+}
+
+#activities {
+    flex-wrap: wrap;
+}
+
+#activities img {
+    width: 335px;
+    height: 135px;
+}
+
+footer {
+    flex-direction: column;
+}
+
 }
