@@ -9,9 +9,12 @@
 #blocpage {
     font-family: "Raleway-VariableFont_wght";
     background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: -8px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+body {
+    margin: 0;
 }
 
 ul {
@@ -92,16 +95,16 @@ form {
     margin-top: 20px;
 }
 
-form i {
+form .fa-map-marker-alt {
     background-color: #f2f2f2;
     border-radius: 14px 0 0 14px;
     width: 50px;
     height: 50px;
     text-align: center;
-    line-height: 45px !important;
+    line-height: 50px !important;
 }
 
-form .search {
+form .searchbar {
     width: 235px;
     font-family: "Raleway-VariableFont_wght";
     font-size: 1em;
@@ -109,7 +112,11 @@ form .search {
     border: none;
 }
 
-form .submit {
+form .submit2 {
+    display: none;
+}
+
+form .submit1 {
     background-color: #0065fc;
     color: white;
     font-family: "Raleway-VariableFont_wght";
@@ -119,12 +126,26 @@ form .submit {
     border: none;
     width: 135px;
 }
+
+form .submit2 {
+    background-color: #0065fc;
+    color: white;
+    font-family: "Raleway-VariableFont_wght";
+    border-radius: 0px 14px 14px 0;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    width: 50px;
+}
+
 /*FILTERS*/
 
 #filters {
     display: flex;
     align-items: center;
     margin: 30px 0 20px 0;
+    flex-wrap: wrap;
+    row-gap: 15px;
 }
 #filters h2 {
     font-size: 1em;
@@ -250,10 +271,12 @@ aside {
 
 aside h2 {
     margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .fa-chart-line {
-    margin-inline-start: 103px;
+    padding-right: 25px;
 }
 
 .pop {
@@ -306,6 +329,7 @@ aside h2 {
 
 #activities {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .act {
@@ -376,6 +400,9 @@ footer {
     display: flex;
     justify-content: left;
     margin: 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 30%;
 }
 
 footer a {
@@ -392,68 +419,102 @@ footer ul li {
 }
 
 footer div {
-    margin-right: 200px;
     margin-left: 30px;
 }
 
-
-
-
 /*VERSION MOBILE*/
 
-@media all and (max-device-width: 480px) {
+@media all and (max-device-width: 768px) {
+    #blocpage {
+        margin-right: 0;
+        margin-left: 0;
+    }
 
-#bloc_page {
-margin-right: 0;
-margin-left: 0;
-padding: 0;
-}
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-ul {
-    flex-wrap: wrap-reverse;
-}
+    header {
+        padding-left: 25px;
+    }
 
-#filters {
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+    #description {
+        padding-left: 25px;
+    }
 
-#loc_aside {
-    flex-wrap: wrap-reverse;
-}
+    .search {
+        padding-left: 25px;
+    }
 
-aside {
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: 0px;
-    width: auto ;
-}
+    form {
+        width: 330px;
+    }
 
-#locations {
-    flex-direction: column;
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
-    background-color: white;
-}
+    form .submit1 {
+        display: none;
+    }
 
-#loc img {
-    width: 335px;
-    height: 135px;
-}
+    form .submit2 {
+        display: initial;
+    }
 
-#activities {
-    flex-wrap: wrap;
-}
+    #filters {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
 
-#activities img {
-    width: 335px;
-    height: 135px;
-}
+    #filters h2 {
+        width: 100%;
+    }
 
-footer {
-    flex-direction: column;
-}
+    #loc_aside {
+        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
+    }
 
+    aside {
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    #locations {
+        flex-direction: column;
+        margin-right: 0;
+        background-color: white;
+    }
+
+    #loc img {
+        width: 335px;
+        height: 135px;
+    }
+
+    .loc {
+        box-shadow: #f2f2f2 0px 10px 15px;
+    }
+
+    #activities {
+        flex-wrap: wrap;
+        padding-left: 25px;
+        justify-content: space-around;
+    }
+
+    #act_bloc h2 {
+        margin-left: 28px;
+    }
+
+    #activities img {
+        width: 335px;
+        height: 135px;
+    }
+
+    .act {
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
