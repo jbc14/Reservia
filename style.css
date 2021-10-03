@@ -206,28 +206,37 @@ form .submit2 {
     margin-right: 20px;
     padding-top: 10px;
     padding-left: 25px;
+    padding-right: 25px;
 }
 
 #locations h2 {
     margin-left: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-#locations #afficherplus {
+#afficherplus {
     margin-left: 5px;
+
+    margin-top: 40px;
 }
 
 #loc {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+#loc a {
+    text-decoration: none;
+    color: black;
 }
 
 .loc {
     background-color: white;
     border-radius: 14px;
     padding: 5px;
-    margin: 0px 25px 25px 0px;
 }
 
 .loc img {
@@ -267,23 +276,27 @@ aside {
     flex-direction: column;
     flex: 1;
     padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    row-gap: 25px;
+    padding-bottom: 25px;
 }
 
 aside h2 {
-    margin-left: 30px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
-.fa-chart-line {
-    padding-right: 25px;
+#popular a {
+    text-decoration: none;
+    color: black;
 }
 
 .pop {
     background-color: white;
     border-radius: 14px;
     padding: 5px;
-    margin: 0px 25px 25px 25px;
     display: flex;
 }
 
@@ -327,16 +340,26 @@ aside h2 {
 
 /*ACTIVITES*/
 
+#act_bloc {
+    margin-bottom: 25px;
+}
+
 #activities {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#activities a {
+    color: black;
+    text-decoration: none;
 }
 
 .act {
     background-color: white;
     border-radius: 14px;
-    margin: 0px 25px 25px 0px;
     box-shadow: #f2f2f2 0px 10px 15px;
+    padding-bottom: 5px;
 }
 
 #activities img {
@@ -353,8 +376,8 @@ aside h2 {
 .colonne div {
     background-color: white;
     border-radius: 14px;
-    margin: 0px 25px 25px 0px;
     box-shadow: #f2f2f2 0px 10px 15px;
+    padding-bottom: 5px;
 }
 
 #vieuxport {
