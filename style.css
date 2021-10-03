@@ -24,8 +24,8 @@ ul {
 /*HEADER*/
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 4fr 2fr 1fr;
     font-size: 1em;
 }
 
@@ -33,16 +33,12 @@ header img {
     padding-top: 20px;
 }
 
-header ul {
+header nav {
     display: flex;
     margin-top: 0;
 }
 
-.navbar {
-    display: flex;
-}
-
-header li {
+header a {
     padding-top: 42px;
     margin-top: 0px;
     font-weight: 1em;
@@ -64,13 +60,13 @@ header a:visited {
     color: black;
 }
 
-header li:hover {
+header a:hover {
     border-top: solid #0065fc;
     color: #0065fc;
     padding-top: 39px;
 }
 
-header li:hover a {
+header a:hover {
     color: #0065fc;
 }
 
