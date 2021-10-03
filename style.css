@@ -436,11 +436,47 @@ footer div {
     }
 
     header {
+        grid-template-columns: 6fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    header img {
         padding-left: 25px;
+    }
+
+    #inscription {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    header nav {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        margin: auto;
+        width: 100%;
+    }
+
+    nav a {
+        width: 50%;
+        padding-top: 0;
+        padding-bottom: 15px;
+        border-bottom: transparent 3px solid;
+    }
+
+    nav a:hover {
+        border-bottom: #0065fc solid 3px;
+        border-top: none;
+        padding-top: 0;
+        padding-bottom: 15px;
     }
 
     #description {
         padding-left: 25px;
+    }
+
+    #description h1 {
+        margin-top: 0;
     }
 
     .search {
@@ -466,6 +502,139 @@ footer div {
 
     #filters h2 {
         width: 100%;
+        margin-bottom: 0;
+    }
+
+    #loc_aside {
+        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    #locations {
+        flex-direction: column;
+        margin-right: 0;
+        background-color: white;
+    }
+
+    #loc img {
+        width: 335px;
+        height: 135px;
+    }
+
+    .loc {
+        box-shadow: #f2f2f2 0px 10px 15px;
+    }
+
+    #activities {
+        flex-wrap: wrap;
+        padding-left: 25px;
+        justify-content: space-around;
+    }
+
+    #act_bloc h2 {
+        margin-left: 28px;
+    }
+
+    #activities img {
+        width: 335px;
+        height: 135px;
+    }
+
+    .act {
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #blocpage {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header {
+        grid-template-columns: 6fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    header img {
+        padding-left: 25px;
+    }
+
+    #inscription {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    header nav {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        margin: auto;
+        width: 100%;
+    }
+
+    nav a {
+        width: 50%;
+        padding-top: 0;
+        padding-bottom: 15px;
+        border-bottom: transparent 3px solid;
+    }
+
+    nav a:hover {
+        border-bottom: #0065fc solid 3px;
+        border-top: none;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
+    #description {
+        padding-left: 25px;
+    }
+
+    #description h1 {
+        margin-top: 0;
+    }
+
+    .search {
+        padding-left: 25px;
+    }
+
+    form {
+        width: 330px;
+    }
+
+    form .submit1 {
+        display: none;
+    }
+
+    form .submit2 {
+        display: initial;
+    }
+
+    #filters {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    #filters h2 {
+        width: 100%;
+        margin-bottom: 0;
     }
 
     #loc_aside {
