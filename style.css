@@ -38,6 +38,10 @@ header ul {
     margin-top: 0;
 }
 
+.navbar {
+    display: flex;
+}
+
 header li {
     padding-top: 42px;
     margin-top: 0px;
