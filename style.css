@@ -25,7 +25,7 @@ ul {
 
 header {
     display: grid;
-    grid-template-columns: 4fr 2fr 1fr;
+    grid-template-columns: 5fr 1fr 1fr;
     font-size: 1em;
 }
 
@@ -145,19 +145,18 @@ form .submit2 {
     align-items: center;
     margin: 30px 0 20px 0;
     flex-wrap: wrap;
+    column-gap: 15px;
     row-gap: 15px;
 }
 #filters h2 {
     font-size: 1em;
     font-weight: bold;
-    margin-inline-end: 20px;
 }
 
 #filters div {
     border: 2px #f2f2f2 solid;
     font-weight: bold;
     border-radius: 25px;
-    margin-inline-end: 15px;
     padding-inline-end: 15px;
     height: 45px;
     text-align: center;
@@ -348,6 +347,7 @@ aside h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 25px;
 }
 
 #activities a {
@@ -371,6 +371,7 @@ aside h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    row-gap: 25px;
 }
 
 .colonne div {
@@ -426,6 +427,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-right: 30%;
+    padding-left: 25px;
 }
 
 footer a {
@@ -439,10 +441,6 @@ footer a:visited {
 footer ul li {
     margin-left: -40px;
     margin-bottom: 10px;
-}
-
-footer div {
-    margin-left: 30px;
 }
 
 /*VERSION MOBILE*/
@@ -531,6 +529,8 @@ footer div {
     #loc_aside {
         flex-wrap: wrap-reverse;
         flex-direction: column-reverse;
+        margin-left: 25px;
+        padding-left: 25px;
     }
 
     aside {
@@ -557,8 +557,13 @@ footer div {
 
     #activities {
         flex-wrap: wrap;
-        padding-left: 25px;
+        row-gap: 25px;
         justify-content: space-around;
+    }
+
+    .colonne {
+        row-gap: 25px;
+        order: 1;
     }
 
     #act_bloc h2 {
@@ -578,6 +583,8 @@ footer div {
         flex-direction: column;
     }
 }
+
+/*VERSION ORDI PETITE FENETRE*/
 
 @media all and (max-width: 768px) {
     #blocpage {
@@ -663,6 +670,8 @@ footer div {
     #loc_aside {
         flex-wrap: wrap-reverse;
         flex-direction: column-reverse;
+        margin-left: 25px;
+        padding-left: 25px;
     }
 
     aside {
@@ -689,8 +698,13 @@ footer div {
 
     #activities {
         flex-wrap: wrap;
-        padding-left: 25px;
         justify-content: space-around;
+        row-gap: 25px;
+    }
+
+    .colonne {
+        row-gap: 25px;
+        order: 1;
     }
 
     #act_bloc h2 {
@@ -708,5 +722,115 @@ footer div {
 
     footer {
         flex-direction: column;
+    }
+}
+
+/*VERSION TABLETTE 768 992*/
+
+@media all and (max-width: 992px) and (min-width: 769px) {
+    #blocpage {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header {
+        padding-left: 25px;
+    }
+
+    #description {
+        padding-left: 25px;
+    }
+
+    .search {
+        padding-left: 25px;
+    }
+
+    #activities img {
+        width: 335px;
+        height: 135px;
+    }
+
+    #activities {
+        row-gap: 25px;
+    }
+
+    .colonne {
+        row-gap: 25px;
+    }
+
+    #loc_aside {
+        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
+        margin-left: 25px;
+        padding-left: 25px;
+    }
+
+    .loc {
+        box-shadow: #f2f2f2 0px 10px 15px;
+    }
+
+    aside {
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    aside h2 {
+        width: 100%;
+    }
+
+    .pop {
+        background-color: white;
+        border-radius: 14px;
+        padding: 5px;
+        flex-direction: column;
+        height: 185px;
+    }
+
+    .pop img {
+        border-radius: 14px 14px 0px 0px;
+        height: 100px;
+        width: 205px;
+    }
+
+    .popinfo {
+        margin-left: 0;
+    }
+
+    .pop .p2 {
+        margin-top: 20px;
+    }
+
+    .loc img {
+        height: 100px;
+        width: 205px;
+    }
+
+    #locations {
+        margin-left: 0;
+        margin-right: 0;
+        background-color: white;
+    }
+
+    #loc {
+        justify-content: space-between;
+    }
+
+    #act_bloc {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .colonne {
+        order: 1;
+    }
+
+    footer {
+        padding-left: 25px;
+        padding-right: 15%;
     }
 }
